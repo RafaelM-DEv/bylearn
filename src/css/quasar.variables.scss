@@ -1,0 +1,204 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary   : #E9F2DF;
+$secondary : #36B1C0;
+$accent    : #9C27B0;
+
+$dark      : #1D1D1D;
+
+$positive  : #21BA45;
+$negative  : #C10015;
+$info      : #31CCEC;
+$warning   : #F2C037;
+
+.anime_astronaut {
+  animation: astronaut 2s ease-in-out infinite;
+}
+  
+@keyframes astronaut {
+  0%,100%
+  {
+  transform: translateY(-5px);
+  }
+  50%
+  {
+  transform: translateY(5px);
+  }
+}
+
+// login
+img {
+  display: absolute;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  top: 20px;
+}
+
+.login-section {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  display: flex;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: $warning;
+  justify-content: center;
+  align-items: center;
+  &_text {
+    font-size: 30px;
+    z-index: 1000;
+  }
+}
+
+.login {
+  display: flex;
+  width: 800px;
+  height: 400px;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.Login_background {
+  background-color: #36B1C0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// stars animation 
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  background: white;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+   width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 6px;
+  height: 6px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 2px;
+  height: 2px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 3px;
+  height: 3px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 10px;
+  height: 10px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0%{
+      transform: translateX(0);
+      opacity: 1;
+  }
+
+  100%{
+      transform: translateY(-1000px);
+      opacity: 0;
+  }
+}
