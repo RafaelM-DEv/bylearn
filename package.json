@@ -9,7 +9,7 @@
     "lint": "eslint --ext .js,.vue ./",
     "test": "echo \"No test specified\" && exit 0",
     "build": "quasar build",
-    "deploy": "npm run build && push-dir --dir=dist/spa --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist/spa --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@quasar/cli": "^1.1.3",
