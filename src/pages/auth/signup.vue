@@ -1,24 +1,23 @@
 <template>
-    <q-page class="Login_background">
-      <div class="bg-primary login shadow-7">
-        <div class="logo column">
+    <q-page class="login">
+      <div class="login__modal shadow-7">
+        <div class="login__logo column">
           <span class="circles"><li></li><li></li><li></li><li></li><li></li><li></li><li></li></span>
-          <span class="anime_astronaut">
-            <img src="../../assets/2091.png" alt="Astronaut">
-          </span>
-          <div class="my-font text-red logo_text">
+            <img id="astronaut" class="anime_astronaut" src="../../assets/astronaut.png" alt="Astronaut">
+          <div class="my-font text-red-6 login__logo__text">
               bylearn.
           </div>
         </div>
-        <div class="login-section column fit create animate__animated animate__fadeIn">
-           <div class="q-mb-md my-font text-h5 text-secondary">Sign Up</div>
-           <q-input class="q-mb-md" outlined color="secondary" dense label="Name" type="text"/>
-           <q-input class="q-mb-md" outlined color="secondary" dense label="Email" type="email"/>
-           <q-input color="secondary q-mb-md" outlined dense label="Password" type="password"/>
+        <div class="login__section column fit create animate__animated animate__fadeIn">
+           <div class="q-mb-md my-font text-h5 text-cyan-7">Sign Up</div>
+           <q-input class="q-mb-md" outlined color="cyan-7" dense label="Name" type="text"/>
+           <q-input class="q-mb-md" outlined color="cyan-7" dense label="Email" type="email"/>
+           <q-input color="cyan-7 q-mb-md" outlined dense label="Password" type="password"/>
            <!-- TODO comparar com o value do password -->
-           <q-input color="secondary" outlined dense label="Confirm Password" type="password"/>
+           <!-- TODO colocar upload de avatar -->
+           <q-input color="cyan-7" outlined dense label="Confirm Password" type="password"/>
            <div class="q-gutter-md q-mt-sm">
-             <q-btn flat class="q-mt-md bg-secondary text-white" label="Create" />
+             <q-btn flat class="q-mt-md bg-cyan-7 text-white" label="Create" />
              <q-btn  flat class="q-mt-md" label="login" @click="animate" />
            </div>
         </div>

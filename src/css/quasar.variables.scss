@@ -12,8 +12,8 @@
 // to match your app's branding.
 // Tip: Use the "Theme Builder" on Quasar's documentation website.
 
-$primary   : #E9F2DF;
-$secondary : #36B1C0;
+$primary   : #1976D2;
+$secondary : #26A69A;
 $accent    : #9C27B0;
 
 $dark      : #1D1D1D;
@@ -36,54 +36,6 @@ $warning   : #F2C037;
   {
   transform: translateY(5px);
   }
-}
-
-// login
-img {
-  display: absolute;
-  position: relative;
-  width: 300px;
-  height: 300px;
-  top: 20px;
-}
-
-.login-section {
-  display: flex;
-  width: 50%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  display: flex;
-  position: relative;
-  width: 50%;
-  height: 100%;
-  background-color: $warning;
-  justify-content: center;
-  align-items: center;
-  &_text {
-    font-size: 30px;
-    z-index: 1000;
-  }
-}
-
-.login {
-  display: flex;
-  width: 800px;
-  height: 400px;
-  z-index: 1;
-  border-radius: 1rem;
-}
-
-.Login_background {
-  background-color: #36B1C0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 // stars animation 
